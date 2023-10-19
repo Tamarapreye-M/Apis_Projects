@@ -9,9 +9,9 @@ const Post = ({ posts }) => {
 		<div className=" bg-slate-500 p-4">
 			<Link to={`/blog/${id}`}>
 				hi
-				<h1 className=" text-2xl font-semibold mb-4">{post}</h1>
+				<h1 className=" text-2xl font-semibold mb-4">{post.title}</h1>
 			</Link>
-			<p>{post}</p>
+			<p>{post.body}</p>
 		</div>
 	);
 };
